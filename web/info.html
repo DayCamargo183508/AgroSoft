@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Agronomía y Cultivos | AgroSoft</title>
+  <style>
+    :root{
+      --bg:#0b1220; --card:#0f172a; --text:#e5e7eb; --muted:#94a3b8;
+      --border:#23304b; --link:#60a5fa; --chip:#0b1b33;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:var(--bg);color:var(--text)}
+    .wrap{max-width:980px;margin:0 auto;padding:28px 18px}
+    header{margin-bottom:16px}
+    h1{margin:0 0 6px;font-size:24px}
+    .muted{margin:0;color:var(--muted);font-size:13px;line-height:1.5}
+    .grid{display:grid;gap:14px;grid-template-columns:1fr}
+    @media (min-width:900px){ .grid{grid-template-columns:1.2fr .8fr} }
+    .card{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:18px}
+    h2{font-size:16px;margin:0 0 8px}
+    h3{font-size:14px;margin:14px 0 6px;color:#cbd5e1}
+    p,li{color:#cbd5e1;line-height:1.6}
+    ul{margin:8px 0 0 18px}
+    a{color:var(--link);text-decoration:none}
+    a:hover{text-decoration:underline}
+    .chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
+    .chip{background:var(--chip);border:1px solid var(--border);color:var(--muted);
+      padding:6px 10px;border-radius:999px;font-size:12px}
+    .table{width:100%;border-collapse:separate;border-spacing:0;overflow:hidden;border-radius:12px;border:1px solid var(--border)}
+    .table th,.table td{padding:10px 12px;border-bottom:1px solid var(--border);text-align:left}
+    .table th{background:rgba(2,6,23,.35);color:#cbd5e1;font-size:13px}
+    .table td{color:#cbd5e1;font-size:13px}
+    .table tr:last-child td{border-bottom:0}
+    .note{margin-top:10px;color:var(--muted);font-size:12px}
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <header>
+      <h1>Información sobre Agronomía y Cultivos</h1>
+      <p class="muted">
+        Sección informativa para AgroSoft: conceptos básicos, buenas prácticas y ejemplos comunes para el manejo de cultivos.
+      </p>
+      <div class="chips">
+        <span class="chip">Suelo</span>
+        <span class="chip">Riego</span>
+        <span class="chip">Nutrición</span>
+        <span class="chip">Plagas y enfermedades</span>
+        <span class="chip">Manejo integrado</span>
+        <span class="chip">Cosecha</span>
+      </div>
+    </header>
+
+    <section class="grid">
+      <!-- Columna principal -->
+      <article class="card">
+        <h2>¿Qué es la agronomía?</h2>
+        <p>
+          La <strong>agronomía</strong> es la disciplina que estudia y aplica prácticas para mejorar la producción agrícola,
+          el uso eficiente de recursos (agua, suelo, nutrientes) y la sostenibilidad del sistema. Integra conocimientos de
+          suelo, clima, biología, manejo de plagas y tecnología.
+        </p>
+
+        <h3>Principales factores que influyen en un cultivo</h3>
+        <ul>
+          <li><strong>Suelo:</strong> textura, pH, materia orgánica, drenaje y fertilidad.</li>
+          <li><strong>Clima:</strong> temperatura, radiación, humedad y precipitación.</li>
+          <li><strong>Agua:</strong> disponibilidad, calidad y método de riego.</li>
+          <li><strong>Genética:</strong> variedad o híbrido adaptado a la zona.</li>
+          <li><strong>Manejo:</strong> densidad de siembra, control de malezas, nutrición y sanidad.</li>
+        </ul>
+
+        <h3>Preparación del suelo (resumen)</h3>
+        <ul>
+          <li>Realizar análisis de suelo para ajustar pH y nutrientes.</li>
+          <li>Mejorar estructura con materia orgánica (composta/abonos) cuando sea viable.</li>
+          <li>Evitar compactación y favorecer buen drenaje.</li>
+        </ul>
+
+        <h3>Riego: principios básicos</h3>
+        <p>
+          El riego debe adaptarse a la etapa del cultivo y al tipo de suelo. Un suelo arenoso requiere riegos más frecuentes
+          y ligeros; uno arcilloso, riegos menos frecuentes pero más profundos (según infiltración y drenaje).
+        </p>
+        <ul>
+          <li><strong>Goteo:</strong> eficiente en agua y fertilización (fertirriego).</li>
+          <li><strong>Aspersión:</strong> útil para ciertos cultivos, depende de viento/evaporación.</li>
+          <li><strong>Gravedad:</strong> tradicional; puede tener pérdidas altas si no se maneja bien.</li>
+        </ul>
+
+        <h3>Nutrición y fertilización</h3>
+        <p>
+          La nutrición se basa en macro y micronutrientes. En general:
+          <strong>N</strong> favorece crecimiento vegetativo, <strong>P</strong> raíces y floración, <strong>K</strong> calidad y resistencia.
+          La recomendación ideal proviene de análisis de suelo y/o foliar.
+        </p>
+
+        <h3>Manejo integrado de plagas y enfermedades (MIP)</h3>
+        <ul>
+          <li><strong>Monitoreo:</strong> revisiones periódicas para detectar a tiempo.</li>
+          <li><strong>Prevención:</strong> semillas sanas, rotación de cultivos, limpieza y manejo de residuos.</li>
+          <li><strong>Control cultural:</strong> fechas de siembra, densidad y ventilación adecuadas.</li>
+          <li><strong>Control biológico:</strong> enemigos naturales cuando aplique.</li>
+          <li><strong>Control químico:</strong> uso responsable, rotación de ingredientes activos y seguridad.</li>
+        </ul>
+
+        <p class="note">
+          Consejo: documentar fechas de siembra, riegos, aplicaciones y observaciones ayuda a tomar mejores decisiones y
+          facilita el diagnóstico de problemas.
+        </p>
+      </article>
+
+      <!-- Columna lateral -->
+      <aside class="card">
+        <h2>Ejemplos de cultivos y cuidados generales</h2>
+        <table class="table" aria-label="Tabla de cultivos">
+          <thead>
+            <tr>
+              <th>Cultivo</th>
+              <th>Recomendaciones generales</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Maíz</td>
+              <td>Buena fertilización N/K, control oportuno de maleza, riego según etapa (floración es crítica).</td>
+            </tr>
+            <tr>
+              <td>Frijol</td>
+              <td>Evitar exceso de humedad, monitorear enfermedades foliares, rotación para reducir plagas del suelo.</td>
+            </tr>
+            <tr>
+              <td>Tomate</td>
+              <td>Goteo y fertirriego recomendables, tutorado/poda según sistema, vigilancia de plagas (mosca blanca, trips).</td>
+            </tr>
+            <tr>
+              <td>Chile</td>
+              <td>Nutrición balanceada, monitoreo de virus y trips, manejo de humedad para evitar pudriciones.</td>
+            </tr>
+            <tr>
+              <td>Lechuga</td>
+              <td>Riegos frecuentes y ligeros, evitar estrés hídrico, cuidado con hongos por exceso de humedad.</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h3>Checklist rápido para el productor</h3>
+        <ul>
+          <li>¿Tengo análisis de suelo reciente?</li>
+          <li>¿Mi plan de riego considera clima y etapa del cultivo?</li>
+          <li>¿Estoy monitoreando plagas/enfermedades cada semana?</li>
+          <li>¿Registro aplicaciones y observaciones?</li>
+          <li>¿Roté o rotaré el cultivo para reducir presión de plagas?</li>
+        </ul>
+
+        <h3>Enlaces útiles</h3>
+        <ul>
+          <li><a href="#" onclick="alert('Aquí podrías enlazar fichas técnicas dentro de AgroSoft'); return false;">Fichas técnicas (AgroSoft)</a></li>
+          <li><a href="#" onclick="alert('Aquí podrías enlazar guías de manejo por cultivo'); return false;">Guías de manejo por cultivo</a></li>
+          <li><a href="#" onclick="alert('Aquí podrías enlazar el módulo de reportes/monitoreo'); return false;">Monitoreo y reportes</a></li>
+        </ul>
+
+        <p class="note">
+          Nota: esta página es informativa. Para decisiones agronómicas específicas, se recomienda asesoría técnica local.
+        </p>
+      </aside>
+    </section>
+  </main>
+</body>
+</html>
